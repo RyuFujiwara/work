@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
+    <title>Web電卓</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <form name="myForm">
+        <table>
+        <tr>
+        <td colspan="4" class="dentaku">電　卓</td>
+        </tr>
+        <tr>
+        <td colspan="3"><input type= "text" class= "myLine" name= "myLine" value="" disabled></td>
+        </tr>
+        <tr>
+        <td class="tool"><input type="button" value="7" onclick="get_calc(this)"></td>
+        <td class="tool"><input type="button" value="8" onclick="get_calc(this)"></td>
+        <td class="tool"><input type="button" value="9" onclick="get_calc(this)"></td>
+        <td class="operator"><input type="button" value="+" onclick="get_calc(this)"></td>
+        </tr>
+        <tr>
+        <td class="tool number"><input type="button" value="4" onclick="get_calc(this)"></td>
+        <td class="tool"><input type="button" value="5" onclick="get_calc(this)"></td>
+        <td class="tool"><input type="button" value="6" onclick="get_calc(this)"></td>
+        <td class="operator"><input type="button" value="-" onclick="get_calc(this)"></td>
+        </tr>
+        <tr>
+        <td class="tool"><input type="button" value="1" onclick="get_calc(this)"></td>
+        <td class="tool"><input type="button" value="2" onclick="get_calc(this)"></td>
+        <td class="tool"><input type="button" value="3" onclick="get_calc(this)"></td>
+        <td class="operator"><input type="button" value="x" name= "multi_btn" onclick="get_calc(this)"></td>
+        </tr>
+        <tr>
+        <td class="tool"><input type="button" value="0" onclick="get_calc(this)"></td>
+        <td class="tool"><input type="button" value="." onclick="get_calc(this)"></td>
+        <td></td>
+        <td class="operator"><input type="button" value="÷" name= "div_btn" onclick="get_calc(this)"></td>
+        </tr>
+        <tr>
+            <td class="tool"><input type="button" value="X²" name = "square_btn" onclick="get_calc(this)" ></td>
+            <td class="tool"><input type="button" value="Tax" name = "Tax_btn" onclick="get_calc(this)"> </td>
+            <td class="tool"><input type="button" value="C" onclick="get_calc(this)"></td>
+            <td class="equal"><input type="button" value="=" onclick="get_calc(this)"></td>
+        </tr>
+        </table>
+        </form>
+        <script type="text/javascript" src="Calculator.js"></script>
+</body>
+</html>
