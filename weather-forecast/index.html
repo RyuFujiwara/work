@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather forecast</title>
+</head>
+
+<body id="content">
+    <h1>天気予報</h1>
+    <form>
+        <p>
+            <select id="city">
+                <option value="016010">札幌（北海道）</option>
+                <option value="040010">仙台（宮城県）</option>
+                <option value="130010">東京（東京都）</option>
+                <option value="230010">名古屋（愛知県）</option>
+                <option value="270000">大阪（大阪府）</option>
+                <option value="340010">広島（広島県）</option>
+                <option value="400010">福岡（福岡県）</option>
+            </select>
+        </p>
+    </form>
+    <input type="button" value="天気予報を知る" onclick="citybtn()" />
+    <p id="box"></p>
+    <p id="caution"></p>
+</body>
+<script src="main.js"></script>
+
+</html>
